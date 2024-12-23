@@ -11,7 +11,7 @@ import (
 func RegisterRoutes(router *gin.Engine) {
 	routes := router.Group(constants.API_PREFIX)
 	{
-		routes.GET("/heatbeat", func(ctx *gin.Context) {
+		routes.GET("/heartbeat", func(ctx *gin.Context) {
 			ctx.JSON(200, gin.H{"message": "beat"})
 		})
 

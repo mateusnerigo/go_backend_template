@@ -22,6 +22,5 @@ func Client() (*gorm.DB, error) {
 		return nil, nil
 	}
 
-	db.AutoMigrate(&models.User{})
 	return db, nil
 }

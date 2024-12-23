@@ -10,6 +10,7 @@ import (
 func main() {
 	server := gin.Default()
 
+	database.MigrationAgent()
 	routes.RegisterRoutes(server)
 
 	log.Fatal(server.Run(":8000"))
